@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+   
+        System.out.print("Enter total number of candies: ");
+        int totalCandies = scanner.nextInt();
+
+        System.out.print("Enter number of students: ");
+        int students = scanner.nextInt();
+
+
+        int candiesPerStudent = totalCandies / students;
+
+
+        int remainingCandies = totalCandies % students;
+
+        System.out.println("Each student gets: " + candiesPerStudent + " candies");
+        System.out.println("Remaining candies: " + remainingCandies);
+
+    
+    }
+}
