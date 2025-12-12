@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        
+        System.out.print("Enter price per pen: ");
+        double price = sc.nextDouble();
+
+     
+        System.out.print("Enter total pens bought: ");
+        int pensBought = sc.nextInt();
+
+    
+        int offerGroups = pensBought / 5;
+
+        int pensToPay = offerGroups * 3;
+
+        int remainingPens = pensBought % 5;
+
+     
+        pensToPay += remainingPens;
+
+
+        double totalCost = pensToPay * price;
+        System.out.println(pensToPay);
+        System.out.println(totalCost);
+    }
+}
+
