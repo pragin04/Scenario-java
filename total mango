@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        
+        System.out.print("Enter price per mango: ");
+        double price = sc.nextDouble();
+
+
+        System.out.print("Enter total mangoes purchased: ");
+        int totalMangoes = sc.nextInt();
+
+
+        int freeMangoes = totalMangoes / 3; 
+
+
+        int totalReceived = totalMangoes + freeMangoes;
+
+        double amountToPay = totalMangoes * price;
+        System .out.println(totalReceived);
+         System .out.println(amountToPay);
+}
+}
+
